@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Titre</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!--<a href="#"><img src="img/noella.png" alt="logo" class="logo"></a>-->
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="text">
+        <h1>Étudiante en <span class="auto-typing"></span></h1>
+        <p>
+            Bonjour, je suis Noëlla, étudiante en deuxième année de Bachelor Informatique. <br>
+            Mon parcours académique en informatique a été une occasion d'acquérir des compétences <br>
+            en programmation. Mon choix de carrière s'est naturellement orienté vers le développement <br>
+            web, un domaine qui m'inspire particulièrement. La conception et le développement de jeux <br>
+            ainsi que d'autres applications captivent mon intérêt de manière singulière.
+        </p>
+        <!--<a href="#">Me contacter</a>-->
+        <a href="img/moncv.pdf" class="cv" target="_blank">Mon CV</a>
+    </section>
+
+    <div class="overlay">
+
+    </div>
+    <!-- librairie Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed('.auto-typing', {
+            strings: ['Informatique'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+            fadeOut: true,
+            fadeOutClass: 'typed-fade-out',
+            fadeOutDelay: 500
+
+        })
+    </script>
+</body>
+</html>
