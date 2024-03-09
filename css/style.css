@@ -15,7 +15,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     /*background: url('/img/bg.jpg') center center no-repeat;*/
     background: black;
     background-size: cover;
@@ -33,7 +33,7 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    padding: 30px 0 10px ;
+    padding: 30px 0 10px;
 }
 
 /*
@@ -64,7 +64,7 @@ nav ul li a:hover {
     color: #2eb0f0;
 }
 
-.text {
+.title {
     padding: 70px 0;
     color: white;
     max-width: 90%;
@@ -72,20 +72,20 @@ nav ul li a:hover {
     margin-right: auto;
 }
 
-.text h1 {
+.title h1 {
     font-size: 75px;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 
-.text p {
+.title p {
     font-size: 1.2rem;
     line-height: 1.5;
     letter-spacing: 1px;
     margin-bottom: 2rem;
 }
 
-.text a {
+.title a {
     display: inline-block;
     text-decoration: none;
     font-size: 1.25rem;
@@ -95,7 +95,7 @@ nav ul li a:hover {
     margin-right: 30px;
 }
 
-.text a.cv {
+.title a.cv {
     color: #121212;
     background-color: #2eb0f0;
     font-weight: 600;
@@ -104,3 +104,170 @@ nav ul li a:hover {
 h1 span.auto-typing {
     color: #2eb0f0;
 }
+
+/*A propos*/
+
+.about {
+    padding: 70px 0;
+    color: white;
+    width: 100%;
+    height: 90vh;
+    background: rgb(11, 10, 10);
+    text-align: center;                 
+}
+
+.about img {
+    width: 110px;
+    background: #262626;
+    border-radius: 50%;
+}
+
+.about h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    
+}
+
+/* skills*/
+
+.skills {
+    padding: 30px 0;
+    color: white;
+    width: 100%;
+    height: 85vh;
+    background: black;
+    text-align: center;
+}
+
+.skills h1 {
+    margin: 20px;
+    font-size: 3rem;;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* retour a la ligne selon la taille de l'écran*/ 
+}
+
+.logo {
+    margin: 10px;
+    background-color: #454545;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.logo img {
+    width: 100px;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+/*projets*/
+
+.mes-projets {
+    padding: 30px 0;
+    background: rgb(11, 10, 10);
+    color: white;
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+}
+
+.mes-projets h1 {
+    margin: 20px;
+    font-size: 3rem;;
+}
+
+.flex1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* retour a la ligne selon la taille de l'écran*/ 
+}
+
+.projet {
+    height: auto;
+    aspect-ratio: 1/1;
+    margin: 10px;
+    position: relative;
+    
+}
+
+.projet a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+
+}
+
+.projet img {
+    width: 170px;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    filter: brightness(20%);
+    transition: filter 0.4s ease-in-out;
+}
+
+.projet:hover img {
+    filter: brightness(40%);
+}
+
+.projet h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    width: fit-content;
+}
+
+/*contacts*/
+
+.mes-contacts {
+    padding: 50px 0;
+    color: white;
+    width: 100%;
+    height: 35vh;
+    background: black;
+    text-align: center;                 
+}
+
+.flex2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact {
+    width: 170px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border: 2px dashed white;
+    border-radius: 6px;
+    
+}
+
+.contact img {
+    width: 15px;
+    height: 100%; 
+    margin-right: 5px;
+}
+

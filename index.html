@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Titre</title>
 </head>
 <body>
+    <div>
     <header>
         <nav>
             <!--<a href="#"><img src="img/noella.png" alt="logo" class="logo"></a>-->
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="text">
+    <section class="title"  id="accueil">
         <h1>Étudiante en <span class="auto-typing"></span></h1>
         <p>
             Bonjour, je suis Noëlla, étudiante en deuxième année de Bachelor Informatique. <br>
@@ -49,5 +53,110 @@
 
         })
     </script>
+    </div>
+
+    <div class="about" id="about">
+        <h2>À propos de moi</h2>
+        <img src="img/pp.png" alt="photo Noëlla">
+        <p>
+            Bonjour, je suis Noëlla, étudiante en deuxième année de Bachelor Informatique. <br>
+            Mon parcours académique en informatique a été une occasion d'acquérir des compétences <br>
+            en programmation. Mon choix de carrière s'est naturellement orienté vers le développement <br>
+            web, un domaine qui m'inspire particulièrement. La conception et le développement de jeux <br>
+            ainsi que d'autres applications captivent mon intérêt de manière singulière. 
+        </p>
+    </div>
+
+    <div class="skills" id="skills">
+        <h1>Mes compétences</h1>
+        <div class="flex">
+            <div class="logo">
+                <img src="img/logo-html.png" alt="html">
+                <h3>HTML</h3>
+            </div>
+            <div class="logo">
+                <img src="img/logo-css.png" alt="css" >
+                <h3>CSS</h3>
+            </div>
+            <div class="logo">
+                <img src="img/logo-js.png" alt="js" >
+                <h3>Javascript</h3>
+            </div>
+        
+            <div class="logo">
+                <img src="img/logo-php.png" alt="php"  >
+                <h3>PHP</h3>
+            </div>
+            <div class="logo">
+                <img src="img/logo-python.png" alt="python">
+                <h3>Python</h3>
+            </div>
+            <div class="logo">
+                <img src="img/logo-csharp.png" alt="c#">
+                <h3>CSharp</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mes-projets" id="projects">
+        <h1>Mes réalisations</h1>
+        <div class="flex1">
+            <div class="projet">
+                <a href="/" target="_blank">
+                    <img src="img/blog.PNG" alt="blog php">
+                    <h3>Blog PHP</h3>
+                </a>
+            </div>
+            <div class="projet">
+                <a href="/" target="_blank">
+                    <img src="img/ai.jpg" alt="projet python">
+                    <h3>Projet AI avec Tkinter</h3>
+                </a>
+            </div>
+            <div class="projet">
+                <a href="/" target="_blank">
+                    <img src="img/choc-de-saveur.jpg" alt="site jeu de plateau">
+                    <h3>Site de jeu de plateau</h3>
+                </a>
+            </div>
+            <div class="projet">
+                <a href="/" target="_blank">
+                    <img src="img/maze.jpg" alt="projet csharp">
+                    <h3>Maze Game C#</h3>
+                </a>
+            </div>
+            <div class="projet">
+                <a href="/" target="_blank">
+                    <img src="img/projet_js.jpg" alt="projet JS">
+                    <h3>Projet1 JS</h3>
+                </a>
+            </div>
+            <div class="projet">
+                <a href="/" target="_blank">
+                    <img src="img/react.jpg" alt="projet React">
+                    <h3>Projet React</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mes-contacts" id="contacts">
+        <h1>Me contacter</h1>
+        <div class="flex2">
+            <div class="contact">
+                <img src="img/mail.png" alt="email">
+                <span class="label">E-mail</span>
+            </div>
+            <div class="contact">
+                <img src="img/linkedin.png" alt="linkedin">
+                <span class="label">LinkedIn</span>
+            </div>
+            <div class="contact">
+                <img src="img/phone.png" alt="numero de téléphone">
+                <span class="label">07.81.17.54.51</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
