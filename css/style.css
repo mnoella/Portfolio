@@ -75,7 +75,7 @@ nav ul li a:hover {
 }
 
 .title h1 {
-    font-size: 75px;
+    font-size: 60px;
     line-height: 1.2;
 }
 
@@ -85,10 +85,6 @@ nav ul li a:hover {
     letter-spacing: 1px;
     margin-bottom: 2rem;
     margin-top: 3rem;
-}
-
-.title h1 span.auto-typing {
-    flex-wrap: wrap;
 }
 
 .title a {
