@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -43,6 +44,7 @@ nav .logo {
 
 nav ul {
     flex: 1;
+    flex-wrap: wrap;
     display: flex;
     justify-content: flex-end;
     padding-right: 40px;
@@ -153,6 +155,7 @@ h1 span.auto-typing {
 }
 
 .flex {
+    gap: 30px; /**/
     display: flex;
     align-items: center;
     justify-content: center;
