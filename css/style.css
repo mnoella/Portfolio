@@ -113,7 +113,7 @@ h1 span.auto-typing {
     padding: 70px 0;
     color: white;
     width: 100%;
-    height: 90vh;
+    height: 110vh;
     background: rgb(11, 10, 10);
     text-align: center;                 
 }
@@ -127,7 +127,7 @@ h1 span.auto-typing {
 .about h2 {
     font-size: 3rem;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 .about p {
@@ -144,14 +144,15 @@ h1 span.auto-typing {
     padding: 30px 0;
     color: white;
     width: 100%;
-    height: 85vh;
+    height: 120vh;
     background: black;
     text-align: center;
 }
 
-.skills h1 {
-    margin: 20px;
-    font-size: 3rem;;
+.skills h2 {
+    margin: 25px;
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .flex {
@@ -159,7 +160,7 @@ h1 span.auto-typing {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* retour a la ligne selon la taille de l'écran*/ 
+    flex-wrap: wrap; 
 }
 
 .logo {
@@ -189,16 +190,17 @@ h1 span.auto-typing {
     text-align: center;
 }
 
-.mes-projets h1 {
-    margin: 20px;
-    font-size: 3rem;;
+.mes-projets h2 {
+    margin: 25px;
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .flex1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* retour a la ligne selon la taille de l'écran*/ 
+    flex-wrap: wrap; 
 }
 
 .projet {
@@ -261,11 +263,7 @@ h1 span.auto-typing {
 .contact {
     width: 170px;
     height: auto;
-    margin: 10px;
-    padding: 10px;
-    border: 2px dashed white;
-    border-radius: 6px;
-    
+    margin: 15px;
 }
 
 .contact img {

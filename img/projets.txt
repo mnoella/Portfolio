@@ -1,0 +1,8 @@
+Blog PHP: captures + consigne projet
+Projet.tkinter: capture plus consignes
+Site jeu ydays: site direct
+Maze Game: Capture et element du jeu (perso,...)
+Projet js1: concept + lien jeu
+Projet React: concept + lien jeu 
+https://aminechkcyb.github.io/
+
