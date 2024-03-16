@@ -271,3 +271,8 @@ h1 span.auto-typing {
     height: auto;
 }
 
+.linkedin, .email, .github{
+    text-decoration: none;
+    color: white;
+}
+
