@@ -197,7 +197,8 @@ h1 span.auto-typing {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .projet {
@@ -276,3 +277,105 @@ h1 span.auto-typing {
     color: white;
 }
 
+/*modal*/
+.modal {
+    position: fixed;
+    display: none;
+    position:fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(12, 12, 12, 0.5);
+}
+
+.modal-content {
+    background-color: #262626;
+    margin: 7.3% auto;
+    padding: 22px;
+    border: 1px solid #484848;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    overflow-y: auto;
+    /*position: relative;*/
+    box-shadow: 0 0 20px #2eb0f0 inset, 0 0 20px #2eb0f0;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 90px;
+    top: 80px;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+.project-modal {
+    display: none;
+    height: 400px;
+    color: white;
+}
+
+.project-modal h2, .project-modal h3, .project-modal p {
+    margin: 15px;
+}
+
+.project-modal.active {
+    display: block;
+}
+
+
+
+
+/*
+.modal {
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.5);
+}
+
+.modal-content {
+    background-color: #262626;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #484848;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+.close:hover,
+.close:focus {
+    cursor: pointer;
+}
+
+.project-modal {
+    display: none;
+    height: 400px;
+    color: white;
+}
+
+.project-modal.active {
+    display: block;
+}
+*/

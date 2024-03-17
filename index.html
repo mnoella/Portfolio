@@ -120,17 +120,13 @@
     <div class="mes-projets" id="projects">
         <h2>Mes réalisations</h2>
         <div class="flex1">
-            <div class="projet">
-                <a href="/" target="_blank">
-                    <img src="img/blog.PNG" alt="blog php">
-                    <h3>Blog PHP</h3>
-                </a>
+            <div class="projet" onclick="openModal('blog')">
+                <img src="img/blog.PNG" alt="blog php">
+                <h3>Blog PHP</h3>
             </div>
-            <div class="projet">
-                <a href="/" target="_blank">
-                    <img src="img/ai.jpg" alt="projet python">
-                    <h3>Projet GPT Tkinter</h3>
-                </a>
+            <div class="projet" onclick="openModal('gpt')">
+                <img src="img/ai.jpg" alt="projet python">
+                <h3>Projet GPT Tkinter</h3>
             </div>
             <div class="projet">
                 <a href="https://mnoella.github.io/un-choc-de-saveur" target="_blank">
@@ -138,23 +134,78 @@
                     <h3>Site Un Choc de Saveur</h3>
                 </a>
             </div>
-            <div class="projet">
-                <a href="/" target="_blank">
-                    <img src="img/maze.jpg" alt="projet csharp">
-                    <h3>Maze Game C#</h3>
-                </a>
+            <div class="projet" onclick="openModal('maze')">
+                <img src="img/maze.jpg" alt="projet csharp">
+                <h3>Maze Game C#</h3>
+            </div>
+            <div class="projet" onclick="openModal('meteo')">
+                <img src="img/projet_js.jpg" alt="projet JS">
+                <h3>Projet1 JS</h3>
             </div>
             <div class="projet">
-                <a href="/" target="_blank">
-                    <img src="img/projet_js.jpg" alt="projet JS">
-                    <h3>Projet1 JS</h3>
-                </a>
-            </div>
-            <div class="projet">
-                <a href="/" target="_blank">
+                <a href="/">
                     <img src="img/react.jpg" alt="projet React">
                     <h3>Projet React</h3>
                 </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div id="blogModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Blog PublishPoint</h2>
+                <p>
+                    Le projet consiste à créer un blog, en PHP, avec une interface d'administration pour
+                    gérer les articles, une page d'accueil pour afficher la liste des articles
+                    avec des liens vers leurs détails, et une page de détails d'article affichant
+                    le contenu complet de l'article, les informations sur l'auteur, les commentaires
+                    existants et un formulaire pour ajouter de nouveaux commentaires.
+                </p>
+                <h3>Maquette</h3>
+            </div>
+            <div id="gptModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Projet GPT Tkinter</h2>
+                <p>
+                    Ce projet consiste à réaliser une application desktop avec une interface graphique 
+                    en Python, utilisant la librairie Tkinter, permettant d'interagir avec un modèle d'intelligence
+                    artificielle via une API sur huggingface. L'objectif est de créer une interface conviviale 
+                    où l'utilisateur peut saisir un prompt et visualiser la réponse générée par le modèle IA.
+                </p>
+                <h3>Maquette</h3>
+            </div>
+            <div id="mazeModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Maze Game C#</h2>
+                <p>
+                    Ce projet consiste à développer un jeu avec le framework MonoGame. <br>
+                    On a décider de développer un jeu de labyrinthe. Dans ce jeu de labyrinthe, le joueur doit 
+                    naviguer à travers un dédale de couloirs pour atteindre la sortie tout en évitant les monstres. <br><br>
+                    Voici les règles principales du jeu : <br><br>
+
+                    Objectif : <br>
+                        - Le joueur doit atteindre la sortie du labyrinthe pour remporter la partie. <br><br>
+
+                    Vie du Joueur : <br>
+                        - Le joueur commence avec 3 vies. <br>
+                        - Une vie est perdue chaque fois que le joueur entre en collision avec un monstre. <br>
+                        - Si le joueur perd toutes ses vies, c'est un Game Over. <br><br>
+
+                    Gestion du Temps : <br>
+                        - Le temps de jeu est défini à 60 secondes par défaut. <br>
+                        - Si le temps imparti est écoulé, c'est également un Game Over. <br><br>
+
+                    Score : <br>
+                        - Le score du joueur augmente progressivement en fonction du temps passé dans le labyrinthe. <br>
+                        - Le joueur gagne 3 points toutes les 20 secondes. <br>
+                        - Le score est affiché à l'écran Game Over en cas d'échec ou à l'écran "Gagné" si le joueur atteint la sortie. <br><br>
+                        
+                    Éléments Manquants : <br>
+                        - Des pièces à ramasser seront ajoutées ultérieurement pour enrichir le gameplay.
+                </p>
+                <h3>Eléments du jeu</h3>
             </div>
         </div>
     </div>
