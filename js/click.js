@@ -1,3 +1,16 @@
+function openModal(project) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById(project + "Modal").classList.add("active");
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+    document.querySelectorAll(".project-modal").forEach(function(modal) {
+        modal.classList.remove("active");
+    });
+}
+
+
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -14,14 +27,3 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-function openModal(project) {
-    document.getElementById("myModal").style.display = "block";
-    document.getElementById(project + "Modal").classList.add("active");
-}
-
-function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-    document.querySelectorAll(".project-modal").forEach(function(modal) {
-        modal.classList.remove("active");
-    });
-}
