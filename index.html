@@ -138,16 +138,16 @@
                 <img src="img/maze.jpg" alt="projet csharp">
                 <h3>Maze Game C#</h3>
             </div>
+            <!--
             <div class="projet">
                 <img src="img/projet_js.jpg" alt="projet JS">
                 <h3>Projet1 JS</h3>
                 <h5>À  VENIR ...</h5>
             </div>
-            <div class="projet">
-                <img src="img/react.jpg" alt="projet React">
-                <h3>Projet React</h3>
-                
-                <h5>À  VENIR ...</h5>
+            -->
+            <div class="projet" onclick="openModal('ai')">
+                <img src="img/react.jpg" alt="projet Django - React">
+                <h3>AI-StoryCraft Django React</h3>
             </div>
         </div>
     </div>
@@ -255,6 +255,71 @@
                         <span class="label">Github</span>
                     </a>
                 </div> -->
+            </div>
+            <div id="aiModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>AI-StoryCraft Django - React</h2>
+                <p>
+                    StoryCraft esf une plateforme de narration interactive en streaming, utilisant 
+                    l'intelligence artificielle pour personnaliser l'expérience de lecture et créer des histoires dynamiques 
+                    adaptées aux préférences des utilisateurs. 
+                    StoryCraft est un projet de groupe de 3 personnes. Mon rôle etait la gestion du frontend, à partir de 
+                    l'intégration IA qui a été fait par l'un des membres du groupe, et la gestion de la base de donnée entre 
+                    le backend et le frontend. <br><br>
+                    Technologie utilisées:
+                    <li>SQL</li>
+                    <li>Python-Django</li>
+                    <li>Javascript-React</li>
+                    <li>GPT-2</li>
+                </p>
+                <h3>Maquette</h3>
+                <h4>Inscription/Connexion</h4>
+                <p>
+                    Les utilisateurs peuvent saisir leur nom d'utilisateur, leur adresse e-mail et leur mot de passe pour 
+                    créer un nouveau compte. Les informations saisies sont enregistrées dans la base de données pour permettre une 
+                    connexion ultérieure.
+                </p>
+                
+                <div class="connexion">
+                    <h4>- Utilisateurs Backend Django</h4><br>
+                    <img src="img/ai-users.png" alt="inscription" class="img1"><br><br>
+                    <h4>- Inscription/Connexion Frontend React :</h4><br>
+                    <img src="img/ai-signup.png" alt="inscription" class="img2">
+                    <img src="img/ai-login.png" alt="connexion" class="img3">
+                </div><br>
+
+                <h4>Generation d’histoire Backend Django</h4>
+                <p>
+                    Notre générateur d'histoires interactif permet aux utilisateurs de personnaliser divers aspects de leur histoire, 
+                    tels que les personnages, les paramètres et les éléments de l'intrigue, en fonction de leurs préférences."
+                    Une fois que les utilisateurs ont généré leur histoire, ils peuvent explorer le contenu créé et plonger dans des 
+                    aventures captivantes directement depuis l'application.
+                </p>
+                <div class="frame">
+                    <img src="img/django admin2.png" alt="admin1">
+                    <img src="img/ai-django admin.png" alt="admin2">
+                </div><br>
+
+                <h4>Page d'accueil</h4>
+                <p>
+                    La page d'accueil de StoryCraft offre aux utilisateurs un accès facile aux fonctionnalités principales de l'application, 
+                    notamment la génération d'histoires, la consultation des favoris et la découverte de la communauté.
+                </p>
+                <div class="frame">
+                    <img src="img/ai-home.png" alt="home">
+                    <img src="img/ai-comment.png" alt="comments">
+                    <img src="img/ai-fav-com.png" alt="favorites et community">
+                </div><br>
+
+                <h4>Page Favories</h4>
+                <p>
+                    Les utilisateurs peuvent sauvegarder leurs histoires préférées et y accéder facilement depuis la page des favoris, 
+                    ce qui leur permet de revenir et de revisiter leurs histoires préférées à tout moment.
+                </p>
+                <div class="frame">
+                    <img src="img/ai-fav.png" alt="favorites et community">
+                    <img src="img/ai-fav_content.png" alt="favorites et community">
+                </div>
             </div>
         </div>
     </div>
