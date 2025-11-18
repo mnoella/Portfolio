@@ -209,10 +209,11 @@
     </div>
     
     
+    <!-- Projets-->
     <div class="mes-projets" id="projects">
         <h2>Mes réalisations</h2>
         <div class="projects-grid">
-            <!-- Projets en ligne avec lien externe -->
+            <!-- Projets en ligne -->
             <div class="project-card">
                 <a href="https://mnoella.github.io/panic-cookie/" target="_blank" class="project-link">
                     <div class="project-image">
@@ -272,7 +273,7 @@
             </div>
 
             <!-- Projets avec modal -->
-            <div class="project-card" onclick="openModal('svelma')">
+            <div class="project-card" onclick="openDrawer('svelma')">
                 <div class="project-image">
                     <img src="img/svelma.png" alt="Svelma">
                     <div class="project-overlay">
@@ -289,7 +290,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('fmg')">
+            <div class="project-card" onclick="openDrawer('fmg')">
                 <div class="project-image">
                     <img src="img/findmygem.png" alt="Find My Gem">
                     <div class="project-overlay">
@@ -306,7 +307,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('aquatrack')">
+            <div class="project-card" onclick="openDrawer('aquatrack')">
                 <div class="project-image">
                     <img src="img/aquatrack.jpg" alt="AquaTrack">
                     <div class="project-overlay">
@@ -323,7 +324,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('travel')">
+            <div class="project-card" onclick="openDrawer('travel')">
                 <div class="project-image">
                     <img src="img/travel-app.jpeg" alt="TravelDiscover">
                     <div class="project-overlay">
@@ -340,7 +341,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('forum')">
+            <div class="project-card" onclick="openDrawer('forum')">
                 <div class="project-image">
                     <img src="img/forum-anonyme.png" alt="Forum Anonyme">
                     <div class="project-overlay">
@@ -357,7 +358,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('calculator')">
+            <div class="project-card" onclick="openDrawer('calculator')">
                 <div class="project-image">
                     <img src="img/calculator.png" alt="Calculator">
                     <div class="project-overlay">
@@ -374,7 +375,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('hcc')">
+            <div class="project-card" onclick="openDrawer('hcc')">
                 <div class="project-image">
                     <img src="img/hcc.jpg" alt="Handball API">
                     <div class="project-overlay">
@@ -392,7 +393,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('eatzee')">
+            <div class="project-card" onclick="openDrawer('eatzee')">
                 <div class="project-image">
                     <img src="img/eatzee.jpeg" alt="Eatzee">
                     <div class="project-overlay">
@@ -409,7 +410,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('tenyzaraina')">
+            <div class="project-card" onclick="openDrawer('tenyzaraina')">
                 <div class="project-image">
                     <img src="img/teny-zaraina.png" alt="Teny Zaraina">
                     <div class="project-overlay">
@@ -426,7 +427,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('blog')">
+            <div class="project-card" onclick="openDrawer('blog')">
                 <div class="project-image">
                     <img src="img/blog.PNG" alt="Blog PHP">
                     <div class="project-overlay">
@@ -443,7 +444,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('gpt')">
+            <div class="project-card" onclick="openDrawer('gpt')">
                 <div class="project-image">
                     <img src="img/ai.jpg" alt="GPT Tkinter">
                     <div class="project-overlay">
@@ -461,7 +462,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('flappy')">
+            <div class="project-card" onclick="openDrawer('flappy')">
                 <div class="project-image">
                     <img src="img/flappy.png" alt="Flappy Bird">
                     <div class="project-overlay">
@@ -478,7 +479,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('maze')">
+            <div class="project-card" onclick="openDrawer('maze')">
                 <div class="project-image">
                     <img src="img/maze.jpg" alt="Maze Game">
                     <div class="project-overlay">
@@ -495,7 +496,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('runner')">
+            <div class="project-card" onclick="openDrawer('runner')">
                 <div class="project-image">
                     <img src="img/infinite-runner.jpeg" alt="Infinite Runner">
                     <div class="project-overlay">
@@ -512,7 +513,7 @@
                 </div>
             </div>
 
-            <div class="project-card" onclick="openModal('ai')">
+            <div class="project-card" onclick="openDrawer('ai')">
                 <div class="project-image">
                     <img src="img/react.jpg" alt="AI-StoryCraft">
                     <div class="project-overlay">
@@ -532,463 +533,543 @@
         </div>
     </div>
 
-    <!-- Modals restent inchangés -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <div id="svelmaModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Svelma</h2>
-                <p>
-                    Svelma est un projet en binôme. Il s'agit d'une application web collaborative développée avec SvelteKit, permettant <br>
-                    d’explorer des films, acteurs et équipes techniques grâce à l’API TMDB. Le site propose <br>
-                    un moteur de recherche, des filtres, la pagination, et des pages détaillées pour chaque <br>
-                    film ou personne, avec un design responsive et une gestion d’erreurs adaptée. <br><br>
+    <!-- Drawer pour les détails des projets -->
+    <div id="projectDrawer" class="drawer">
+        <div class="drawer-overlay" onclick="closeDrawer()"></div>
+        <div class="drawer-content">
+            <button class="drawer-close" onclick="closeDrawer()" aria-label="Fermer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            <div class="drawer-body">
+                <!-- Svelma -->
+                <div id="svelmaDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>Svelma</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">SvelteKit</span>
+                            <span class="meta-tag">TypeScript</span>
+                            <span class="meta-tag">Projet en binôme</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>À propos du projet</h3>
+                        <p>
+                            Svelma est un projet en binôme. Il s'agit d'une application web collaborative développée avec SvelteKit, permettant
+                            d'explorer des films, acteurs et équipes techniques grâce à l'API TMDB. Le site propose
+                            un moteur de recherche, des filtres, la pagination, et des pages détaillées pour chaque
+                            film ou personne, avec un design responsive et une gestion d'erreurs adaptée.
+                        </p>
+                    </div>
 
-                    J’ai participé à la gestion et au développement collaboratif du projet Svelma, <br>
-                    une application web sur le cinéma. Nous avons défini ensemble la répartition des tâches : <br>
-                    je me suis chargée de l’intégration du back-end (connexion à l’API TMDB, création des <br>
-                    endpoints, gestion des données et pagination), tandis que mon binôme s’occupait du front-end <br>
-                    (maquettes, intégration visuelle, composants Svelte).
-                    Nous avons utilisé GitHub pour organiser le travail : chaque nouvelle fonctionnalité était <br>
-                    développée sur une branche dédiée, puis soumise en Pull Request pour relecture et validation <br>
-                    par l’autre membre de l’équipe avant d’être fusionnée sur la branche principale.
-                    Nous avons également mis en place un workflow de déploiement continu sur Netlify, permettant <br>
-                    de déployer automatiquement la dernière version validée du projet. <br>
-                </p>
-                <p>
-                    - Plateforme de gestion de code source :  GitHub (branches, Pull Requests, revue de code, releases)br
-                    - Outils de communication et de suivi : GitHub Issues, commentaires sur les PR <br>
-                    - Outil de déploiement : Netlify (déploiement automatique via GitHub Actions) <br>
-                    - Outils de développement : SvelteKit, JavaScript, SCSS, API TMDb, Postman pour les tests d’API <br>
+                    <div class="project-section">
+                        <h3>Mon rôle</h3>
+                        <p>
+                            J'ai participé à la gestion et au développement collaboratif du projet Svelma,
+                            une application web sur le cinéma. Nous avons défini ensemble la répartition des tâches :
+                            je me suis chargée de l'intégration du back-end (connexion à l'API TMDB, création des
+                            endpoints, gestion des données et pagination), tandis que mon binôme s'occupait du front-end
+                            (maquettes, intégration visuelle, composants Svelte).
+                        </p>
+                    </div>
 
-                </p>
-                <div>
-                    <img src="img/svelma-accueil.png" alt="accueil">
-                    <img src="img/svelma-movie.png" alt="movie">
-                    <img src="img/svelma-actor.png" alt="actor">
+                    <div class="project-section">
+                        <h3>Méthodologie & Outils</h3>
+                        <ul class="tech-list">
+                            <li><strong>Plateforme de gestion de code source :</strong> GitHub (branches, Pull Requests, revue de code, releases)</li>
+                            <li><strong>Outils de communication et de suivi :</strong> GitHub Issues, commentaires sur les PR</li>
+                            <li><strong>Outil de déploiement :</strong> Netlify (déploiement automatique via GitHub Actions)</li>
+                            <li><strong>Outils de développement :</strong> SvelteKit, JavaScript, SCSS, API TMDb, Postman pour les tests d'API</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Aperçus</h3>
+                        <div class="project-gallery">
+                            <img src="img/svelma-accueil.png" alt="Accueil Svelma">
+                            <img src="img/svelma-movie.png" alt="Page film">
+                            <img src="img/svelma-actor.png" alt="Page acteur">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id="fmgModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Find My Gem</h2>
-                <p>
-                    Le projet Find My Gem a été réalisé par une équipe de quatre étudiants issus de trois <br>
-                    formations à MyDigital School Lille : une étudiante en B3 Web Design UX/UI, 2 étudiants <br>
-                    en B3 Webmarketing & Social Media, et moi étudiante B3 Développement Web. <br>
-                    Find My Gem est une plateforme en ligne qui met en relation des clients à la recherche <br>
-                    de bijoux uniques et des artisans bijoutiers français. Notre solution répond à une demande <br>
-                    croissante d’authenticité, de personnalisation et de valorisation de l’artisanat local. <br>
-                    Grâce à Find My Gem, chaque client peut soumettre son idée de bijou sur mesure , recevoir <br>
-                    plusieurs propositions de créateurs, comparer les offres et collaborer directement avec l’artisan <br>
-                    de son choix. La plateforme facilite ainsi la création de pièces uniques tout en offrant une <br>
-                    vitrine moderne et gratuite aux artisans bijoutiers. <br>
-                </p>
-                <p>
-                    L’architecture de Find My Gem repose sur trois couches principales. <br>
 
-                    Frontend : <br>
+                <!-- Find My Gem -->
+                <div id="fmgDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>Find My Gem</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">SvelteKit</span>
+                            <span class="meta-tag">MySQL</span>
+                            <span class="meta-tag">Projet de groupe</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>À propos du projet</h3>
+                        <p>
+                            Le projet Find My Gem a été réalisé par une équipe de quatre étudiants issus de trois
+                            formations à MyDigital School Lille : une étudiante en B3 Web Design UX/UI, 2 étudiants
+                            en B3 Webmarketing & Social Media, et moi étudiante B3 Développement Web.
+                            Find My Gem est une plateforme en ligne qui met en relation des clients à la recherche
+                            de bijoux uniques et des artisans bijoutiers français. Notre solution répond à une demande
+                            croissante d'authenticité, de personnalisation et de valorisation de l'artisanat local.
+                        </p>
+                    </div>
 
-                    La couche frontend correspond à l’interface utilisateur, développée avec SvelteKit et TypeScript. <br>
-                    Elle gère l’affichage, la navigation, la validation des formulaires et la communication avec le <br>
-                    backend via des requêtes HTTP. Le frontend est responsable de l’expérience utilisateur, de la <br>
-                    présentation des données et de l’accessibilité sur tous les supports. <br><br>
-
-                    Backend : <br>
-
-                    La couche backend, également basé sur SvelteKit (endpoints), expose une API REST sécurisée qui <br>
-                    centralise la logique métier : gestion des utilisateurs, des demandes, des devis, des commandes, <br>
-                    des paiements, etc. Il assure l’authentification, l’autorisation, la validation des données et la <br>
-                    gestion des rôles. Le backend fait le lien entre le frontend et la base de données via des requêtes <br>
-                    Typescript, tout en garantissant la sécurité et la cohérence des échanges. <br><br>
-
-
-                    Base de données : <br>
-
-                    La base de données MySQL stocke toutes les informations essentielles du projet : utilisateurs, <br>
-                    clients, artisans, demandes, devis, commandes, paiements, messages, avis, badges, etc. Elle est <br>
-                    conçue de façon relationnelle pour garantir l’intégrité, la sécurité et la traçabilité des données. <br>
-                    La structure de la base permet de répondre efficacement aux besoins métiers et d’assurer la fiabilité <br>
-                    des transactions. <br>
-                </p>
-                <p>
-                    L’utilisateur accède à la plateforme via un navigateur web (findmygem.fr). <br>
-                    Le frontend communique avec le backend à travers des requêtes HTTP (API REST). <br>
-                    Le backend traite les requêtes, applique la logique métier, gère la sécurité et interagit avec la base <br>
-                    de données MySQL pour lire ou modifier les informations. <br>
-                    Les fichiers statiques (images, uploads) sont gérés par le serveur. <br>
-                    L’ensemble est hébergé sur O2Switch, qui assure la disponibilité et la sécurité de la plateforme. <br>
-
-                </p>
-                <div>
-                    <img src="img/fmg-login.png" alt="connexion">
-                    <img src="img/fmg-acceuil.png" alt="accueil">
-                    <img src="img/fmg-bijoux.png" alt="bijoux">
-                    <img src="img/fmg-formulaire.png" alt="actor">
-                    <img src="img/fmg-trello.png" alt="actor">
-                </div>
-            </div>
-            <div id="aquatrackModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>AquaTrack</h2>
-                <p>
-                    Dans le cadre du module UX Design, projet AquaTrack visait à concevoir une application mobile d'hydratation pour sportifs, <br>
-                    en réponse à un brief client spécifique : "Comment assurer une hydratation optimale pour <br>
-                    Simone tout au long de son marathon, en tenant compte de son emploi du temps chargé et du <br>
-                    climat de Milan ?". Ce projet réalisé dans le cadre du module UX Design nécessitait une <br>
-                    analyse approfondie des besoins utilisateurs et la création de maquettes complètes. <br><br>
-
-                    J'ai analysé les besoins pour une application d'hydratation destinée aux sportifs, en me <br>
-                    basant sur le cas d'usage d'une marathonienne (Simone) avec un emploi du temps chargé et <br>
-                    des contraintes climatiques (Milan). J'ai réalisé un benchmark complet des applications <br>
-                    existantes (Waterlama, Nike Run Club, Waterdrop, Hydro Coach), défini les personas et user stories, <br>
-                    puis créé les maquettes complètes sur Figma. J'ai conçu les wireframes, défini l'architecture de <br>
-                    l'information, créé le design system (couleurs, typographie, icônes), et développé les maquettes <br>
-                    pour toutes les fonctionnalités : suivi d'hydratation intelligent, planification personnalisée, <br>
-                    système de badges, défis entre amis, et analyse post-course. <br>
-                </p>
-                <p>
-                    - Analyse des besoins : Personas, user stories, cas d'usage détaillés <br>
-                    - Benchmark : Analyse concurrentielle (Waterlama, Nike Run Club, etc.) <br>
-                    - Maquettage : Figma pour wireframes et maquettes <br>
-                    - Design System : Palette de couleurs, typographie, iconographie cohérente <br>
-                    - UX Research : Analyse des parcours utilisateurs <br>
-                    - Prototypage : Maquettes interactives avec transitions <br>
-                </p>
-                <p>
-                    Le projet incluait une réflexion approfondie sur l'expérience utilisateur avec des fonctionnalités <br>
-                    innovantes comme l'adaptation aux conditions climatiques et l'intégration avec les calendriers d'entraînement. <br>
-                    Les maquettes finales ont été affinées après plusieurs itérations pour éliminer le superflu et optimiser <br>
-                    l'expérience utilisateur. <br>
-                </p>
-                <div>
-                    <img src="img/aquatrack-maquettes.png" alt="maquettes1">
-                    <img src="img/aquatrack-maquettes2.png" alt="maquettes2">
-                </div>
-            </div>
-            <div id="travelModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>TravelDiscover</h2>
-                <p>
-                    -
-                </p>
-                <div>
-                    -
-                    <!-- <img src="img/svelma-accueil.png" alt="accueil">
-                    <img src="img/svelma-movie.png" alt="movie">
-                    <img src="img/svelma-actor.png" alt="actor"> -->
-                </div>
-            </div>
-            <div id="forumModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Forum Anonyme</h2>
-                <p>
-                    Le projet Forum Anonyme consistait à développer une plateforme permettant aux <br>
-                    utilisateurs de publier des messages sous pseudonyme sans système de création de compte. <br>
-                    L'objectif technique était de mettre en place une architecture microservices avec Docker, <br>
-                    comprenant 4 services distincts : API (gestion des messages), DB (stockage), Thread (affichage) <br>
-                    et Sender (écriture). Ce projet s'inscrivait dans le cadre du module Conteneurisation et visait <br>
-                    à appliquer les principes DevOps. <br><br>
-
-                    Pour ce projet individuel j’ai participé à la préparation et à la mise en production de l’application en <br>
-                    adoptant une démarche DevOps. J’ai conçu et rédigé les Dockerfiles pour chaque service (API, Thread, Sender), <br>
-                    mis en place un fichier docker-compose.yml pour orchestrer l’ensemble des conteneurs, et configuré les réseaux <br>
-                    Docker afin d’isoler la base de données et l’API du reste des services. J’ai également veillé à la persistance <br>
-                    des données via les volumes Docker et à la sécurité des échanges entre services. Toutes les étapes ont été <br>
-                    réalisées dans un environnement de développement local, en respectant les bonnes pratiques DevOps. <br>
-                </p>
-                <p>
-                    - Docker : Conteneurisation des services (API, Thread, Sender, DB) <br>
-                    - Docker Compose : Orchestration multi-conteneurs, gestion des réseaux et des volumes <br>
-                    - Node.js, React, NestJS, MySQL : Technologies utilisées pour les différents services <br>
-                    - Commitizen : Respect de la convention de commit (Conventional Commits) <br>
-                    - Réseaux Docker : Isolation de la base de données et de l’API <br>
-                    - Volumes Docker : Persistance des données de la base MySQL <br>
-                    - Github : Versionnage du code source <br>
-                </p>
-                <div>
-                    <img src="img/forum-conteneur.png" alt="docker ps">
-                    <img src="img/forum-sender.png" alt="Envoyer un message">
-                    <img src="img/forum-thread.png" alt="Messages">
-                </div>
-            </div>
-            <div id="calculatorModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Calculator</h2>
-                <p>
-                    Dans le cadre du module Qualité Logicielle et Tests de ma formation à MyDigitalSchool, <br>
-                    j'ai développé une calculatrice complète en appliquant la méthodologie Test Driven Development (TDD). <br>
-                    L'objectif principal était de mettre en œuvre des composants métier robustes, chargés de réaliser <br>
-                    les opérations mathématiques (addition, soustraction, multiplication) demandées par les utilisateurs, <br>
-                    tout en mettant en pratique les principes du développement piloté par les tests. La calculatrice devait <br>
-                    également intégrer une fonctionnalité d'historique permettant de consulter les calculs précédents ou <br>
-                    d'effacer l'historique. L'accent était mis sur la qualité du code, la couverture de tests et l'application <br>
-                    rigoureuse de la méthodologie TDD.  <br><br>
-
-                    Pour le développement de la calculatrice, j’ai d’abord installé et configuré l’environnement de travail <br>
-                    adapté au projet : initialisation du projet avec npm, configuration de TypeScript, ESLint et Prettier pour <br>
-                    garantir la qualité du code, et mise en place de Vitest et Playwright pour les tests. J’ai ensuite développé <br>
-                    l’interface utilisateur avec React, en créant un composant principal (CalculatorUI) qui permet à l’utilisateur <br>
-                    de saisir des opérations, d’afficher le résultat et de consulter ou effacer l’historique des calculs. <br>
-                    J’ai également appliqué une feuille de style personnalisée pour assurer une expérience utilisateur agréable. <br>
-                </p>
-                <p>
-                    Mon travail a consisté à développer la logique métier de la calculatrice dans une classe dédiée, testée <br>
-                    unitairement avec Vitest mais aussi des test e2e avec Playwright. Les principaux composants métier développés sont : <br>
-                    -	Le moteur de calcul : Ce composant gère la logique des opérations arithmétiques de base (addition, soustraction, <br>
-                    multiplication). J'ai écrit des tests pour chaque opération avant d'implémenter la logique correspondante. <br>
-                    -	Le gestionnaire d'historique : Ce composant est responsable de l'enregistrement, de la consultation et <br>
-                    de la suppression de l'historique des calculs effectués par l'utilisateur. Les tests ont couvert ces différentes <br>
-                    fonctionnalités. <br> <br>
-                    Pour chaque fonctionnalité, j'ai suivi le cycle TDD : écrire un test qui échoue (Rouge), écrire le code minimal <br>
-                    pour faire passer le test (Vert), puis refactoriser le code pour améliorer sa structure tout en maintenant les tests <br>
-                    au vert. Cette approche a permis de construire des composants métier fiables et bien testés. <br>
-                </p>
-                <p>
-                    J'ai préparé et exécuté les plans de tests complets pour la Calculatrice. Cela incluait la rédaction, la maintenance <br>
-                    et l'exécution des tests unitaires (Vitest) pour assurer la fiabilité des composants métier, notamment la logique <br>
-                    de calcul et la gestion de l’historique. J'ai également développé des tests End-to-End avec Playwright pour valider <br>
-                    les parcours utilisateurs sur l’interface graphique. <br>
-                </p>
-                <p>
-                    -Gestionnaire de paquets : npm <br>
-                    -Langage : TypeScript <br>
-                    -Framework UI : React <br>
-                    -Outils de qualité de code : ESLint, Prettier <br>
-                    -Méthodologie : Test Driven Development (TDD) <br>
-                    -Outils de tests : Vitest (unitaires), Playwright (e2e) <br>
-                    -Outils de build et de développement : Vite <br>
-                    -Feuilles de style personnalisées : CSS <br>
-                </p>
-                <div>
-                    <img src="img/forum-conteneur.png" alt="docker ps">
-                    <img src="img/forum-sender.png" alt="Envoyer un message">
-                    <img src="img/forum-thread.png" alt="Messages">
-                </div>
-            </div>
-            <div id="hccModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>HCC Handball API</h2>
-                <p>
-                    Le projet vise à développer une API REST sécurisée, réalisée avec NestJS et une base de données SQLite, afin de gérer <br>
-                    les adhérents, les matchs et les actualités du club. Cette API est destinée à alimenter un site web et une application mobile, <br>
-                    afin de promouvoir ses activités, avec un fil d'actualités et un espace membre pour les adhérents. <br><br>
-
-                    J'ai défini l'architecture logicielle complète de l'API Handball en utilisant le framework NestJS. J'ai structuré <br>
-                    l'application en modules distincts (auth, users, matches, news), chacun comprenant ses propres contrôleurs pour la <br>
-                    gestion des requêtes HTTP, ses services pour la logique métier, et ses entités pour l'accès aux données via TypeORM. <br>
-                    J'ai mis en place une authentification sécurisée par JWT, ainsi que des guards pour la gestion des rôles (coach, contributeur, <br>
-                    joueur) et la protection des routes selon les droits d'accès.  Pour la partie accès aux données SQL, j'ai créé les <br>
-                    composants d'accès aux données avec TypeORM, implémenté les repositories pour les entités (adhérents, matchs, actualités), <br>
-                    et développé les services métier intégrant la gestion des rôles et des permissions. <br>
-                </p>
-                <p>
-                    -Framework : NestJS (structuration en modules, contrôleurs, services) <br>
-                    -ORM & Base de données : TypeORM avec base SQLite (gestion des entités et relations) <br>
-                    -Sécurité : Authentification JWT, Passport, guards personnalisés pour la gestion des rôles et des accès <br>
-                    -Configuration : Variables d’environnement gérées avec dotenv <br>
-                    -Documentation : Swagger (OpenAPI) pour la documentation interactive de l’API <br>
-                    -Validation : class-validator et DTOs pour la validation des données. <br>
-                </p>
-                <div>
-                    <img src="img/hcc-token.png" alt="swagger">
-                    <img src="img/hcc-get.png" alt="test-get">
-                </div>
-            </div>
-            <div id="eatzeeModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Eatzee</h2>
-                <p>
-                    -
-                </p>
-                <div>
-                    <img src="img/eatzee-paywall.jpg" alt="paywall">
-                    <img src="img/eatzee-chat.jpg" alt="chat1">
-                    <img src="img/eatzee-chat2.jpg" alt="chat2">
-                    <img src="img/eatzee-filtre.jpg" alt="filtre">
-                    <img src="img/eatzee-notif.jpg" alt="notification1">
-                    <img src="img/eatzee-notif2.jpg" alt="notification2">
-                    <img src="img/eatzee-notif3.jpg" alt="notification3">
-                </div>
-            </div>
-            <div id="tenyzarainaModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Teny Zaraina</h2>
-                <p>
-                    Voir les articles de mon blog de stage
-                </p>
-            </div>
-            <div id="blogModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Blog PublishPoint</h2>
-                <p>
-                    Le projet consiste à créer un blog, en PHP, avec une interface d'administration pour
-                    gérer les articles, une page d'accueil pour afficher la liste des articles
-                    avec des liens vers leurs détails, et une page de détails d'article affichant
-                    le contenu complet de l'article, les informations sur l'auteur, les commentaires
-                    existants et un formulaire pour ajouter de nouveaux commentaires.
-                </p>
-                <h3>Maquette</h3>
-                <div class="connexion">
-                    <img src="img/sign.png" alt="inscription" class="img1">
-                    <img src="img/co.png" alt="connexion" class="img2">
-                </div>
-                <div class="frame">
-                    <img src="img/accueil.png" alt="accueil">
-                    <img src="img/article.png" alt="article">
-                    <img src="img/créer.png" alt="écrire un article">
-                </div>
-            </div>
-            <div id="gptModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Projet GPT Tkinter</h2>
-                <p>
-                    Ce projet consiste à réaliser une application desktop avec une interface graphique 
-                    en Python, utilisant la librairie Tkinter, permettant d'interagir avec un modèle d'intelligence
-                    artificielle via une API sur huggingface. L'objectif est de créer une interface conviviale 
-                    où l'utilisateur peut saisir un prompt et visualiser la réponse générée par le modèle IA.
-                </p>
-                <h3>Maquette</h3>
-                <div class="tk">
-                    <img src="img/tk.png" alt="maquette">
-                </div>
-            </div>
-            <div id="flappyModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Flappy Bird</h2>
-                <p>
-                    - Capture video de Unity (à mettre plus tard)
-                </p>
-            </div>
-            <div id="mazeModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Maze Game C#</h2>
-                <p>
-                    Ce projet consiste à développer un jeu avec le framework MonoGame. <br>
-                    On a décider de développer un jeu de labyrinthe. Dans ce jeu de labyrinthe, le joueur doit 
-                    naviguer à travers un dédale de couloirs pour atteindre la sortie tout en évitant les monstres. <br><br>
-                    Voici les règles principales du jeu : <br><br>
-
-                    Objectif : <br>
-                        - Le joueur doit atteindre la sortie du labyrinthe pour remporter la partie. <br><br>
-
-                    Vie du Joueur : <br>
-                        - Le joueur commence avec 3 vies. <br>
-                        - Une vie est perdue chaque fois que le joueur entre en collision avec un monstre. <br>
-                        - Si le joueur perd toutes ses vies, c'est un Game Over. <br><br>
-
-                    Gestion du Temps : <br>
-                        - Le temps de jeu est défini à 60 secondes par défaut. <br>
-                        - Si le temps imparti est écoulé, c'est également un Game Over. <br><br>
-
-                    Score : <br>
-                        - Le score du joueur augmente progressivement en fonction du temps passé dans le labyrinthe. <br>
-                        - Le joueur gagne 3 points toutes les 20 secondes. <br>
-                        - Le score est affiché à l'écran Game Over en cas d'échec ou à l'écran "Gagné" si le joueur atteint la sortie. <br><br>
+                    <div class="project-section">
+                        <h3>Architecture technique</h3>
+                        <p><strong>Frontend :</strong> La couche frontend correspond à l'interface utilisateur, développée avec SvelteKit et TypeScript.
+                            Elle gère l'affichage, la navigation, la validation des formulaires et la communication avec le
+                            backend via des requêtes HTTP.</p>
                         
-                    Éléments Manquants : <br>
-                        - Des pièces à ramasser seront ajoutées ultérieurement pour enrichir le gameplay.
-                </p>
-                <h3>Eléments du jeu</h3>
-                <div class="mazegame">
-                    <img src="img/mazegame.png" alt="mazegame">
-                </div>
-                <div>
-                    <p>héro:</p>
-                    <img src="img/hero.png" alt="héro">
-                </div>
-                <div>
-                    <p>monstres : </p>
-                    <img src="img/Bmonster.png" alt="monster">
-                    <img src="img/Gmonster.png" alt="monster">
-                    <img src="img/Rmonster.png" alt="monster">
-                    <img src="img/Ymonster.png" alt="monster">
-                </div>
-                <div>
-                    <p>pièces:</p>
-                    <img src="img/coin2.png" alt="coin">
-                    <img src="img/coin10.png" alt="coin">
-                    <img src="img/coin20.png" alt="coin">
-                    <img src="img/coin30.png" alt="coin">
-                </div>
-                <div>
-                    <p>vie:</p>
-                    <img src="img/lives.jpg" alt="lives">
-                </div>
-                <div>
-                    <p>ligne d'arrivée:</p>
-                    <img src="img/flag.png" alt="flag">
-                </div>
-            </div>
-            <div id="runnerModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>Infinite Runner</h2>
-                <p>
-                    - Capture video de Unity (à mettre plus tard)
-                </p>
-            </div>
-            <div id="aiModal" class="project-modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h2>AI-StoryCraft Django - React</h2>
-                <p>
-                    StoryCraft est une plateforme de narration interactive en streaming, utilisant 
-                    l'intelligence artificielle pour personnaliser l'expérience de lecture et créer des histoires dynamiques 
-                    adaptées aux préférences des utilisateurs. 
-                    StoryCraft est un projet de groupe de 3 personnes. Mon rôle était la gestion du frontend, à partir de 
-                    l'intégration IA qui a été fait par l'un des membres du groupe, et la gestion de la base de donnée entre 
-                    le backend et le frontend. <br><br>
-                    Technologie utilisées:
-                    <li>SQL</li>
-                    <li>Python-Django</li>
-                    <li>Javascript-React</li>
-                    <li>GPT-2</li>
-                </p>
-                <h3>Maquette</h3>
-                <h4>Inscription/Connexion</h4>
-                <p>
-                    Les utilisateurs peuvent saisir leur nom d'utilisateur, leur adresse e-mail et leur mot de passe pour 
-                    créer un nouveau compte. Les informations saisies sont enregistrées dans la base de données pour permettre une 
-                    connexion ultérieure.
-                </p>
-                
-                <div class="connexion">
-                    <h4>- Utilisateurs Backend Django</h4><br>
-                    <img src="img/ai-users.png" alt="inscription" class="img1"><br><br>
-                    <h4>- Inscription/Connexion Frontend React :</h4><br>
-                    <img src="img/ai-signup.png" alt="inscription" class="img2">
-                    <img src="img/ai-login.png" alt="connexion" class="img3">
-                </div><br>
+                        <p><strong>Backend :</strong> La couche backend, également basé sur SvelteKit (endpoints), expose une API REST sécurisée qui
+                            centralise la logique métier : gestion des utilisateurs, des demandes, des devis, des commandes,
+                            des paiements, etc.</p>
+                        
+                        <p><strong>Base de données :</strong> La base de données MySQL stocke toutes les informations essentielles du projet : utilisateurs,
+                            clients, artisans, demandes, devis, commandes, paiements, messages, avis, badges, etc.</p>
+                    </div>
 
-                <h4>Generation d'histoire Backend Django</h4>
-                <p>
-                    Notre générateur d'histoires interactif permet aux utilisateurs de personnaliser divers aspects de leur histoire, 
-                    tels que les personnages, les paramètres et les éléments de l'intrigue, en fonction de leurs préférences."
-                    Une fois que les utilisateurs ont généré leur histoire, ils peuvent explorer le contenu créé et plonger dans des 
-                    aventures captivantes directement depuis l'application.
-                </p>
-                <div class="frame">
-                    <img src="img/django admin2.png" alt="admin1">
-                    <img src="img/ai-django admin.png" alt="admin2">
-                </div><br>
+                    <div class="project-section">
+                        <h3>Aperçus</h3>
+                        <div class="project-gallery">
+                            <img src="img/fmg-login.png" alt="Connexion">
+                            <img src="img/fmg-acceuil.png" alt="Accueil">
+                            <img src="img/fmg-bijoux.png" alt="Catalogue bijoux">
+                            <img src="img/fmg-formulaire.png" alt="Formulaire">
+                            <img src="img/fmg-trello.png" alt="Organisation Trello">
+                        </div>
+                    </div>
+                </div>
 
-                <h4>Page d'accueil</h4>
-                <p>
-                    La page d'accueil de StoryCraft offre aux utilisateurs un accès facile aux fonctionnalités principales de l'application, 
-                    notamment la génération d'histoires, la consultation des favoris et la découverte de la communauté.
-                </p>
-                <div class="frame">
-                    <img src="img/ai-home.png" alt="home">
-                    <img src="img/ai-comment.png" alt="comments">
-                    <img src="img/ai-fav-com.png" alt="favorites et community">
-                </div><br>
+                <!-- AquaTrack -->
+                <div id="aquatrackDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>AquaTrack</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">UX Design</span>
+                            <span class="meta-tag">Figma</span>
+                            <span class="meta-tag">Mobile App</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Brief du projet</h3>
+                        <p>
+                            Dans le cadre du module UX Design, projet AquaTrack visait à concevoir une application mobile d'hydratation pour sportifs,
+                            en réponse à un brief client spécifique : "Comment assurer une hydratation optimale pour
+                            Simone tout au long de son marathon, en tenant compte de son emploi du temps chargé et du
+                            climat de Milan ?".
+                        </p>
+                    </div>
 
-                <h4>Page Favories</h4>
-                <p>
-                    Les utilisateurs peuvent sauvegarder leurs histoires préférées et y accéder facilement depuis la page des favoris, 
-                    ce qui leur permet de revenir et de revisiter leurs histoires préférées à tout moment.
-                </p>
-                <div class="frame">
-                    <img src="img/ai-fav.png" alt="favorites et community">
-                    <img src="img/ai-fav_content.png" alt="favorites et community">
+                    <div class="project-section">
+                        <h3>Démarche UX</h3>
+                        <ul class="tech-list">
+                            <li><strong>Analyse des besoins :</strong> Personas, user stories, cas d'usage détaillés</li>
+                            <li><strong>Benchmark :</strong> Analyse concurrentielle (Waterlama, Nike Run Club, etc.)</li>
+                            <li><strong>Maquettage :</strong> Figma pour wireframes et maquettes</li>
+                            <li><strong>Design System :</strong> Palette de couleurs, typographie, iconographie cohérente</li>
+                            <li><strong>UX Research :</strong> Analyse des parcours utilisateurs</li>
+                            <li><strong>Prototypage :</strong> Maquettes interactives avec transitions</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Maquettes</h3>
+                        <div class="project-gallery">
+                            <img src="img/aquatrack-maquettes.png" alt="Maquettes AquaTrack 1">
+                            <img src="img/aquatrack-maquettes2.png" alt="Maquettes AquaTrack 2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel Discover -->
+                <div id="travelDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>TravelDiscover</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">React</span>
+                            <span class="meta-tag">Maps API</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <p>Projet en cours de documentation...</p>
+                    </div>
+                </div>
+
+                <!-- Forum Anonyme -->
+                <div id="forumDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>Forum Anonyme</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">Docker</span>
+                            <span class="meta-tag">Microservices</span>
+                            <span class="meta-tag">DevOps</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Objectif technique</h3>
+                        <p>
+                            Le projet Forum Anonyme consistait à développer une plateforme permettant aux
+                            utilisateurs de publier des messages sous pseudonyme sans système de création de compte.
+                            L'objectif technique était de mettre en place une architecture microservices avec Docker,
+                            comprenant 4 services distincts : API (gestion des messages), DB (stockage), Thread (affichage)
+                            et Sender (écriture).
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Technologies & DevOps</h3>
+                        <ul class="tech-list">
+                            <li><strong>Docker :</strong> Conteneurisation des services (API, Thread, Sender, DB)</li>
+                            <li><strong>Docker Compose :</strong> Orchestration multi-conteneurs, gestion des réseaux et des volumes</li>
+                            <li><strong>Stack technique :</strong> Node.js, React, NestJS, MySQL</li>
+                            <li><strong>Commitizen :</strong> Respect de la convention de commit (Conventional Commits)</li>
+                            <li><strong>Réseaux Docker :</strong> Isolation de la base de données et de l'API</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Aperçus</h3>
+                        <div class="project-gallery">
+                            <img src="img/forum-conteneur.png" alt="Conteneurs Docker">
+                            <img src="img/forum-sender.png" alt="Interface Sender">
+                            <img src="img/forum-thread.png" alt="Fil de discussion">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculator -->
+                <div id="calculatorDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>Calculator</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">React</span>
+                            <span class="meta-tag">TDD</span>
+                            <span class="meta-tag">Tests</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Méthodologie TDD</h3>
+                        <p>
+                            Dans le cadre du module Qualité Logicielle et Tests, j'ai développé une calculatrice complète en appliquant la méthodologie Test Driven Development (TDD).
+                            L'objectif principal était de mettre en œuvre des composants métier robustes, chargés de réaliser
+                            les opérations mathématiques (addition, soustraction, multiplication) demandées par les utilisateurs,
+                            tout en mettant en pratique les principes du développement piloté par les tests.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Stack technique</h3>
+                        <ul class="tech-list">
+                            <li><strong>Gestionnaire de paquets :</strong> npm</li>
+                            <li><strong>Langage :</strong> TypeScript</li>
+                            <li><strong>Framework UI :</strong> React</li>
+                            <li><strong>Outils de qualité de code :</strong> ESLint, Prettier</li>
+                            <li><strong>Méthodologie :</strong> Test Driven Development (TDD)</li>
+                            <li><strong>Outils de tests :</strong> Vitest (unitaires), Playwright (e2e)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- HCC Handball -->
+                <div id="hccDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>HCC Handball API REST</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">NestJS</span>
+                            <span class="meta-tag">TypeORM</span>
+                            <span class="meta-tag">API REST</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Objectif du projet</h3>
+                        <p>
+                            Le projet vise à développer une API REST sécurisée, réalisée avec NestJS et une base de données SQLite, afin de gérer
+                            les adhérents, les matchs et les actualités du club. Cette API est destinée à alimenter un site web et une application mobile,
+                            afin de promouvoir ses activités, avec un fil d'actualités et un espace membre pour les adhérents.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Architecture & Sécurité</h3>
+                        <ul class="tech-list">
+                            <li><strong>Framework :</strong> NestJS (structuration en modules, contrôleurs, services)</li>
+                            <li><strong>ORM & Base de données :</strong> TypeORM avec base SQLite</li>
+                            <li><strong>Sécurité :</strong> Authentification JWT, Passport, guards personnalisés</li>
+                            <li><strong>Configuration :</strong> Variables d'environnement gérées avec dotenv</li>
+                            <li><strong>Documentation :</strong> Swagger (OpenAPI)</li>
+                            <li><strong>Validation :</strong> class-validator et DTOs</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Aperçus</h3>
+                        <div class="project-gallery">
+                            <img src="img/hcc-token.png" alt="Documentation Swagger">
+                            <img src="img/hcc-get.png" alt="Tests API">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eatzee -->
+                <div id="eatzeeDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>Eatzee</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag tag-alternance">Alternance</span>
+                            <span class="meta-tag">React</span>
+                            <span class="meta-tag">Mobile</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <p>Projet réalisé en alternance - Documentation en cours...</p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Aperçus</h3>
+                        <div class="project-gallery">
+                            <img src="img/eatzee-paywall.jpg" alt="Paywall">
+                            <img src="img/eatzee-chat.jpg" alt="Chat 1">
+                            <img src="img/eatzee-chat2.jpg" alt="Chat 2">
+                            <img src="img/eatzee-filtre.jpg" alt="Filtres">
+                            <img src="img/eatzee-notif.jpg" alt="Notifications 1">
+                            <img src="img/eatzee-notif2.jpg" alt="Notifications 2">
+                            <img src="img/eatzee-notif3.jpg" alt="Notifications 3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teny Zaraina -->
+                <div id="tenyzarainaDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>Teny Zaraina</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag tag-alternance">Alternance</span>
+                            <span class="meta-tag">Next.js</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <p>Voir les articles de mon blog de stage pour plus de détails sur ce projet.</p>
+                    </div>
+                </div>
+
+                <!-- Blog PublishPoint -->
+                <div id="blogDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>Blog PublishPoint</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">PHP</span>
+                            <span class="meta-tag">MySQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Description</h3>
+                        <p>
+                            Le projet consiste à créer un blog, en PHP, avec une interface d'administration pour
+                            gérer les articles, une page d'accueil pour afficher la liste des articles
+                            avec des liens vers leurs détails, et une page de détails d'article affichant
+                            le contenu complet de l'article, les informations sur l'auteur, les commentaires
+                            existants et un formulaire pour ajouter de nouveaux commentaires.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Maquettes</h3>
+                        <div class="project-gallery">
+                            <img src="img/sign.png" alt="Inscription">
+                            <img src="img/co.png" alt="Connexion">
+                            <img src="img/accueil.png" alt="Accueil">
+                            <img src="img/article.png" alt="Article">
+                            <img src="img/créer.png" alt="Créer un article">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GPT Tkinter -->
+                <div id="gptDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>Projet GPT Tkinter</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">Python</span>
+                            <span class="meta-tag">Tkinter</span>
+                            <span class="meta-tag">IA</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Description</h3>
+                        <p>
+                            Ce projet consiste à réaliser une application desktop avec une interface graphique 
+                            en Python, utilisant la librairie Tkinter, permettant d'interagir avec un modèle d'intelligence
+                            artificielle via une API sur huggingface. L'objectif est de créer une interface conviviale 
+                            où l'utilisateur peut saisir un prompt et visualiser la réponse générée par le modèle IA.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Maquette</h3>
+                        <div class="project-gallery">
+                            <img src="img/tk.png" alt="Interface Tkinter">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flappy Bird -->
+                <div id="flappyDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>Flappy Bird</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">JavaScript</span>
+                            <span class="meta-tag">Game Dev</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <p>Clone du jeu classique Flappy Bird - Captures vidéo à venir...</p>
+                    </div>
+                </div>
+
+                <!-- Maze Game -->
+                <div id="mazeDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>Maze Game C#</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">C#</span>
+                            <span class="meta-tag">MonoGame</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Concept du jeu</h3>
+                        <p>
+                            Ce projet consiste à développer un jeu avec le framework MonoGame.
+                            Nous avons décidé de développer un jeu de labyrinthe. Dans ce jeu de labyrinthe, le joueur doit 
+                            naviguer à travers un dédale de couloirs pour atteindre la sortie tout en évitant les monstres.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Règles du jeu</h3>
+                        <ul class="tech-list">
+                            <li><strong>Objectif :</strong> Atteindre la sortie du labyrinthe</li>
+                            <li><strong>Vie du Joueur :</strong> 3 vies au départ, une vie perdue par collision avec un monstre</li>
+                            <li><strong>Gestion du Temps :</strong> 60 secondes pour terminer le niveau</li>
+                            <li><strong>Score :</strong> +3 points toutes les 20 secondes</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Éléments du jeu</h3>
+                        <div class="project-gallery game-elements">
+                            <img src="img/mazegame.png" alt="Aperçu du labyrinthe">
+                            <img src="img/hero.png" alt="Héro">
+                            <img src="img/Bmonster.png" alt="Monstre bleu">
+                            <img src="img/Gmonster.png" alt="Monstre vert">
+                            <img src="img/Rmonster.png" alt="Monstre rouge">
+                            <img src="img/Ymonster.png" alt="Monstre jaune">
+                            <img src="img/coin2.png" alt="Pièce 2">
+                            <img src="img/coin10.png" alt="Pièce 10">
+                            <img src="img/coin20.png" alt="Pièce 20">
+                            <img src="img/coin30.png" alt="Pièce 30">
+                            <img src="img/lives.jpg" alt="Vies">
+                            <img src="img/flag.png" alt="Ligne d'arrivée">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infinite Runner -->
+                <div id="runnerDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>Infinite Runner</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">C#</span>
+                            <span class="meta-tag">Game Dev</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <p>Jeu endless runner - Captures vidéo à venir...</p>
+                    </div>
+                </div>
+
+                <!-- AI-StoryCraft -->
+                <div id="aiDrawer" class="project-detail">
+                    <div class="project-header">
+                        <h2>AI-StoryCraft</h2>
+                        <div class="project-meta">
+                            <span class="meta-tag">Django</span>
+                            <span class="meta-tag">React</span>
+                            <span class="meta-tag">GPT-2</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Description</h3>
+                        <p>
+                            StoryCraft est une plateforme de narration interactive en streaming, utilisant 
+                            l'intelligence artificielle pour personnaliser l'expérience de lecture et créer des histoires dynamiques 
+                            adaptées aux préférences des utilisateurs. 
+                            StoryCraft est un projet de groupe de 3 personnes. Mon rôle était la gestion du frontend, à partir de 
+                            l'intégration IA qui a été fait par l'un des membres du groupe, et la gestion de la base de donnée entre 
+                            le backend et le frontend.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Technologies utilisées</h3>
+                        <ul class="tech-list">
+                            <li>SQL</li>
+                            <li>Python-Django</li>
+                            <li>Javascript-React</li>
+                            <li>GPT-2</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Inscription & Connexion</h3>
+                        <p>
+                            Les utilisateurs peuvent saisir leur nom d'utilisateur, leur adresse e-mail et leur mot de passe pour 
+                            créer un nouveau compte. Les informations saisies sont enregistrées dans la base de données pour permettre une 
+                            connexion ultérieure.
+                        </p>
+                        <div class="project-gallery">
+                            <img src="img/ai-users.png" alt="Backend Django">
+                            <img src="img/ai-signup.png" alt="Inscription">
+                            <img src="img/ai-login.png" alt="Connexion">
+                        </div>
+                    </div>
+
+                    <div class="project-section">
+                        <h3>Génération d'histoires</h3>
+                        <p>
+                            Notre générateur d'histoires interactif permet aux utilisateurs de personnaliser divers aspects de leur histoire, 
+                            tels que les personnages, les paramètres et les éléments de l'intrigue, en fonction de leurs préférences.
+                            Une fois que les utilisateurs ont généré leur histoire, ils peuvent explorer le contenu créé et plonger dans des 
+                            aventures captivantes directement depuis l'application.
+                        </p>
+                        <div class="project-gallery">
+                            <img src="img/django admin2.png" alt="Admin Django 1">
+                            <img src="img/ai-django admin.png" alt="Admin Django 2">
+                            <img src="img/ai-home.png" alt="Page d'accueil">
+                            <img src="img/ai-comment.png" alt="Commentaires">
+                            <img src="img/ai-fav-com.png" alt="Favoris et communauté">
+                            <img src="img/ai-fav.png" alt="Page favoris">
+                            <img src="img/ai-fav_content.png" alt="Contenu favoris">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
