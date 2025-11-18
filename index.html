@@ -535,6 +535,288 @@
     <!-- Modals restent inchangés -->
     <div id="myModal" class="modal">
         <div class="modal-content">
+            <div id="svelmaModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Svelma</h2>
+                <p>
+                    Svelma est un projet en binôme. Il s'agit d'une application web collaborative développée avec SvelteKit, permettant <br>
+                    d’explorer des films, acteurs et équipes techniques grâce à l’API TMDB. Le site propose <br>
+                    un moteur de recherche, des filtres, la pagination, et des pages détaillées pour chaque <br>
+                    film ou personne, avec un design responsive et une gestion d’erreurs adaptée. <br><br>
+
+                    J’ai participé à la gestion et au développement collaboratif du projet Svelma, <br>
+                    une application web sur le cinéma. Nous avons défini ensemble la répartition des tâches : <br>
+                    je me suis chargée de l’intégration du back-end (connexion à l’API TMDB, création des <br>
+                    endpoints, gestion des données et pagination), tandis que mon binôme s’occupait du front-end <br>
+                    (maquettes, intégration visuelle, composants Svelte).
+                    Nous avons utilisé GitHub pour organiser le travail : chaque nouvelle fonctionnalité était <br>
+                    développée sur une branche dédiée, puis soumise en Pull Request pour relecture et validation <br>
+                    par l’autre membre de l’équipe avant d’être fusionnée sur la branche principale.
+                    Nous avons également mis en place un workflow de déploiement continu sur Netlify, permettant <br>
+                    de déployer automatiquement la dernière version validée du projet. <br>
+                </p>
+                <p>
+                    - Plateforme de gestion de code source :  GitHub (branches, Pull Requests, revue de code, releases)br
+                    - Outils de communication et de suivi : GitHub Issues, commentaires sur les PR <br>
+                    - Outil de déploiement : Netlify (déploiement automatique via GitHub Actions) <br>
+                    - Outils de développement : SvelteKit, JavaScript, SCSS, API TMDb, Postman pour les tests d’API <br>
+
+                </p>
+                <div>
+                    <img src="img/svelma-accueil.png" alt="accueil">
+                    <img src="img/svelma-movie.png" alt="movie">
+                    <img src="img/svelma-actor.png" alt="actor">
+                </div>
+            </div>
+            <div id="fmgModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Find My Gem</h2>
+                <p>
+                    Le projet Find My Gem a été réalisé par une équipe de quatre étudiants issus de trois <br>
+                    formations à MyDigital School Lille : une étudiante en B3 Web Design UX/UI, 2 étudiants <br>
+                    en B3 Webmarketing & Social Media, et moi étudiante B3 Développement Web. <br>
+                    Find My Gem est une plateforme en ligne qui met en relation des clients à la recherche <br>
+                    de bijoux uniques et des artisans bijoutiers français. Notre solution répond à une demande <br>
+                    croissante d’authenticité, de personnalisation et de valorisation de l’artisanat local. <br>
+                    Grâce à Find My Gem, chaque client peut soumettre son idée de bijou sur mesure , recevoir <br>
+                    plusieurs propositions de créateurs, comparer les offres et collaborer directement avec l’artisan <br>
+                    de son choix. La plateforme facilite ainsi la création de pièces uniques tout en offrant une <br>
+                    vitrine moderne et gratuite aux artisans bijoutiers. <br>
+                </p>
+                <p>
+                    L’architecture de Find My Gem repose sur trois couches principales. <br>
+
+                    Frontend : <br>
+
+                    La couche frontend correspond à l’interface utilisateur, développée avec SvelteKit et TypeScript. <br>
+                    Elle gère l’affichage, la navigation, la validation des formulaires et la communication avec le <br>
+                    backend via des requêtes HTTP. Le frontend est responsable de l’expérience utilisateur, de la <br>
+                    présentation des données et de l’accessibilité sur tous les supports. <br><br>
+
+                    Backend : <br>
+
+                    La couche backend, également basé sur SvelteKit (endpoints), expose une API REST sécurisée qui <br>
+                    centralise la logique métier : gestion des utilisateurs, des demandes, des devis, des commandes, <br>
+                    des paiements, etc. Il assure l’authentification, l’autorisation, la validation des données et la <br>
+                    gestion des rôles. Le backend fait le lien entre le frontend et la base de données via des requêtes <br>
+                    Typescript, tout en garantissant la sécurité et la cohérence des échanges. <br><br>
+
+
+                    Base de données : <br>
+
+                    La base de données MySQL stocke toutes les informations essentielles du projet : utilisateurs, <br>
+                    clients, artisans, demandes, devis, commandes, paiements, messages, avis, badges, etc. Elle est <br>
+                    conçue de façon relationnelle pour garantir l’intégrité, la sécurité et la traçabilité des données. <br>
+                    La structure de la base permet de répondre efficacement aux besoins métiers et d’assurer la fiabilité <br>
+                    des transactions. <br>
+                </p>
+                <p>
+                    L’utilisateur accède à la plateforme via un navigateur web (findmygem.fr). <br>
+                    Le frontend communique avec le backend à travers des requêtes HTTP (API REST). <br>
+                    Le backend traite les requêtes, applique la logique métier, gère la sécurité et interagit avec la base <br>
+                    de données MySQL pour lire ou modifier les informations. <br>
+                    Les fichiers statiques (images, uploads) sont gérés par le serveur. <br>
+                    L’ensemble est hébergé sur O2Switch, qui assure la disponibilité et la sécurité de la plateforme. <br>
+
+                </p>
+                <div>
+                    <img src="img/fmg-login.png" alt="connexion">
+                    <img src="img/fmg-acceuil.png" alt="accueil">
+                    <img src="img/fmg-bijoux.png" alt="bijoux">
+                    <img src="img/fmg-formulaire.png" alt="actor">
+                    <img src="img/fmg-trello.png" alt="actor">
+                </div>
+            </div>
+            <div id="aquatrackModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>AquaTrack</h2>
+                <p>
+                    Dans le cadre du module UX Design, projet AquaTrack visait à concevoir une application mobile d'hydratation pour sportifs, <br>
+                    en réponse à un brief client spécifique : "Comment assurer une hydratation optimale pour <br>
+                    Simone tout au long de son marathon, en tenant compte de son emploi du temps chargé et du <br>
+                    climat de Milan ?". Ce projet réalisé dans le cadre du module UX Design nécessitait une <br>
+                    analyse approfondie des besoins utilisateurs et la création de maquettes complètes. <br><br>
+
+                    J'ai analysé les besoins pour une application d'hydratation destinée aux sportifs, en me <br>
+                    basant sur le cas d'usage d'une marathonienne (Simone) avec un emploi du temps chargé et <br>
+                    des contraintes climatiques (Milan). J'ai réalisé un benchmark complet des applications <br>
+                    existantes (Waterlama, Nike Run Club, Waterdrop, Hydro Coach), défini les personas et user stories, <br>
+                    puis créé les maquettes complètes sur Figma. J'ai conçu les wireframes, défini l'architecture de <br>
+                    l'information, créé le design system (couleurs, typographie, icônes), et développé les maquettes <br>
+                    pour toutes les fonctionnalités : suivi d'hydratation intelligent, planification personnalisée, <br>
+                    système de badges, défis entre amis, et analyse post-course. <br>
+                </p>
+                <p>
+                    - Analyse des besoins : Personas, user stories, cas d'usage détaillés <br>
+                    - Benchmark : Analyse concurrentielle (Waterlama, Nike Run Club, etc.) <br>
+                    - Maquettage : Figma pour wireframes et maquettes <br>
+                    - Design System : Palette de couleurs, typographie, iconographie cohérente <br>
+                    - UX Research : Analyse des parcours utilisateurs <br>
+                    - Prototypage : Maquettes interactives avec transitions <br>
+                </p>
+                <p>
+                    Le projet incluait une réflexion approfondie sur l'expérience utilisateur avec des fonctionnalités <br>
+                    innovantes comme l'adaptation aux conditions climatiques et l'intégration avec les calendriers d'entraînement. <br>
+                    Les maquettes finales ont été affinées après plusieurs itérations pour éliminer le superflu et optimiser <br>
+                    l'expérience utilisateur. <br>
+                </p>
+                <div>
+                    <img src="img/aquatrack-maquettes.png" alt="maquettes1">
+                    <img src="img/aquatrack-maquettes2.png" alt="maquettes2">
+                </div>
+            </div>
+            <div id="travelModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>TravelDiscover</h2>
+                <p>
+                    -
+                </p>
+                <div>
+                    -
+                    <!-- <img src="img/svelma-accueil.png" alt="accueil">
+                    <img src="img/svelma-movie.png" alt="movie">
+                    <img src="img/svelma-actor.png" alt="actor"> -->
+                </div>
+            </div>
+            <div id="forumModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Forum Anonyme</h2>
+                <p>
+                    Le projet Forum Anonyme consistait à développer une plateforme permettant aux <br>
+                    utilisateurs de publier des messages sous pseudonyme sans système de création de compte. <br>
+                    L'objectif technique était de mettre en place une architecture microservices avec Docker, <br>
+                    comprenant 4 services distincts : API (gestion des messages), DB (stockage), Thread (affichage) <br>
+                    et Sender (écriture). Ce projet s'inscrivait dans le cadre du module Conteneurisation et visait <br>
+                    à appliquer les principes DevOps. <br><br>
+
+                    Pour ce projet individuel j’ai participé à la préparation et à la mise en production de l’application en <br>
+                    adoptant une démarche DevOps. J’ai conçu et rédigé les Dockerfiles pour chaque service (API, Thread, Sender), <br>
+                    mis en place un fichier docker-compose.yml pour orchestrer l’ensemble des conteneurs, et configuré les réseaux <br>
+                    Docker afin d’isoler la base de données et l’API du reste des services. J’ai également veillé à la persistance <br>
+                    des données via les volumes Docker et à la sécurité des échanges entre services. Toutes les étapes ont été <br>
+                    réalisées dans un environnement de développement local, en respectant les bonnes pratiques DevOps. <br>
+                </p>
+                <p>
+                    - Docker : Conteneurisation des services (API, Thread, Sender, DB) <br>
+                    - Docker Compose : Orchestration multi-conteneurs, gestion des réseaux et des volumes <br>
+                    - Node.js, React, NestJS, MySQL : Technologies utilisées pour les différents services <br>
+                    - Commitizen : Respect de la convention de commit (Conventional Commits) <br>
+                    - Réseaux Docker : Isolation de la base de données et de l’API <br>
+                    - Volumes Docker : Persistance des données de la base MySQL <br>
+                    - Github : Versionnage du code source <br>
+                </p>
+                <div>
+                    <img src="img/forum-conteneur.png" alt="docker ps">
+                    <img src="img/forum-sender.png" alt="Envoyer un message">
+                    <img src="img/forum-thread.png" alt="Messages">
+                </div>
+            </div>
+            <div id="calculatorModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Calculator</h2>
+                <p>
+                    Dans le cadre du module Qualité Logicielle et Tests de ma formation à MyDigitalSchool, <br>
+                    j'ai développé une calculatrice complète en appliquant la méthodologie Test Driven Development (TDD). <br>
+                    L'objectif principal était de mettre en œuvre des composants métier robustes, chargés de réaliser <br>
+                    les opérations mathématiques (addition, soustraction, multiplication) demandées par les utilisateurs, <br>
+                    tout en mettant en pratique les principes du développement piloté par les tests. La calculatrice devait <br>
+                    également intégrer une fonctionnalité d'historique permettant de consulter les calculs précédents ou <br>
+                    d'effacer l'historique. L'accent était mis sur la qualité du code, la couverture de tests et l'application <br>
+                    rigoureuse de la méthodologie TDD.  <br><br>
+
+                    Pour le développement de la calculatrice, j’ai d’abord installé et configuré l’environnement de travail <br>
+                    adapté au projet : initialisation du projet avec npm, configuration de TypeScript, ESLint et Prettier pour <br>
+                    garantir la qualité du code, et mise en place de Vitest et Playwright pour les tests. J’ai ensuite développé <br>
+                    l’interface utilisateur avec React, en créant un composant principal (CalculatorUI) qui permet à l’utilisateur <br>
+                    de saisir des opérations, d’afficher le résultat et de consulter ou effacer l’historique des calculs. <br>
+                    J’ai également appliqué une feuille de style personnalisée pour assurer une expérience utilisateur agréable. <br>
+                </p>
+                <p>
+                    Mon travail a consisté à développer la logique métier de la calculatrice dans une classe dédiée, testée <br>
+                    unitairement avec Vitest mais aussi des test e2e avec Playwright. Les principaux composants métier développés sont : <br>
+                    -	Le moteur de calcul : Ce composant gère la logique des opérations arithmétiques de base (addition, soustraction, <br>
+                    multiplication). J'ai écrit des tests pour chaque opération avant d'implémenter la logique correspondante. <br>
+                    -	Le gestionnaire d'historique : Ce composant est responsable de l'enregistrement, de la consultation et <br>
+                    de la suppression de l'historique des calculs effectués par l'utilisateur. Les tests ont couvert ces différentes <br>
+                    fonctionnalités. <br> <br>
+                    Pour chaque fonctionnalité, j'ai suivi le cycle TDD : écrire un test qui échoue (Rouge), écrire le code minimal <br>
+                    pour faire passer le test (Vert), puis refactoriser le code pour améliorer sa structure tout en maintenant les tests <br>
+                    au vert. Cette approche a permis de construire des composants métier fiables et bien testés. <br>
+                </p>
+                <p>
+                    J'ai préparé et exécuté les plans de tests complets pour la Calculatrice. Cela incluait la rédaction, la maintenance <br>
+                    et l'exécution des tests unitaires (Vitest) pour assurer la fiabilité des composants métier, notamment la logique <br>
+                    de calcul et la gestion de l’historique. J'ai également développé des tests End-to-End avec Playwright pour valider <br>
+                    les parcours utilisateurs sur l’interface graphique. <br>
+                </p>
+                <p>
+                    -Gestionnaire de paquets : npm <br>
+                    -Langage : TypeScript <br>
+                    -Framework UI : React <br>
+                    -Outils de qualité de code : ESLint, Prettier <br>
+                    -Méthodologie : Test Driven Development (TDD) <br>
+                    -Outils de tests : Vitest (unitaires), Playwright (e2e) <br>
+                    -Outils de build et de développement : Vite <br>
+                    -Feuilles de style personnalisées : CSS <br>
+                </p>
+                <div>
+                    <img src="img/forum-conteneur.png" alt="docker ps">
+                    <img src="img/forum-sender.png" alt="Envoyer un message">
+                    <img src="img/forum-thread.png" alt="Messages">
+                </div>
+            </div>
+            <div id="hccModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>HCC Handball API</h2>
+                <p>
+                    Le projet vise à développer une API REST sécurisée, réalisée avec NestJS et une base de données SQLite, afin de gérer <br>
+                    les adhérents, les matchs et les actualités du club. Cette API est destinée à alimenter un site web et une application mobile, <br>
+                    afin de promouvoir ses activités, avec un fil d'actualités et un espace membre pour les adhérents. <br><br>
+
+                    J'ai défini l'architecture logicielle complète de l'API Handball en utilisant le framework NestJS. J'ai structuré <br>
+                    l'application en modules distincts (auth, users, matches, news), chacun comprenant ses propres contrôleurs pour la <br>
+                    gestion des requêtes HTTP, ses services pour la logique métier, et ses entités pour l'accès aux données via TypeORM. <br>
+                    J'ai mis en place une authentification sécurisée par JWT, ainsi que des guards pour la gestion des rôles (coach, contributeur, <br>
+                    joueur) et la protection des routes selon les droits d'accès.  Pour la partie accès aux données SQL, j'ai créé les <br>
+                    composants d'accès aux données avec TypeORM, implémenté les repositories pour les entités (adhérents, matchs, actualités), <br>
+                    et développé les services métier intégrant la gestion des rôles et des permissions. <br>
+                </p>
+                <p>
+                    -Framework : NestJS (structuration en modules, contrôleurs, services) <br>
+                    -ORM & Base de données : TypeORM avec base SQLite (gestion des entités et relations) <br>
+                    -Sécurité : Authentification JWT, Passport, guards personnalisés pour la gestion des rôles et des accès <br>
+                    -Configuration : Variables d’environnement gérées avec dotenv <br>
+                    -Documentation : Swagger (OpenAPI) pour la documentation interactive de l’API <br>
+                    -Validation : class-validator et DTOs pour la validation des données. <br>
+                </p>
+                <div>
+                    <img src="img/hcc-token.png" alt="swagger">
+                    <img src="img/hcc-get.png" alt="test-get">
+                </div>
+            </div>
+            <div id="eatzeeModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Eatzee</h2>
+                <p>
+                    -
+                </p>
+                <div>
+                    <img src="img/eatzee-paywall.jpg" alt="paywall">
+                    <img src="img/eatzee-chat.jpg" alt="chat1">
+                    <img src="img/eatzee-chat2.jpg" alt="chat2">
+                    <img src="img/eatzee-filtre.jpg" alt="filtre">
+                    <img src="img/eatzee-notif.jpg" alt="notification1">
+                    <img src="img/eatzee-notif2.jpg" alt="notification2">
+                    <img src="img/eatzee-notif3.jpg" alt="notification3">
+                </div>
+            </div>
+            <div id="tenyzarainaModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Teny Zaraina</h2>
+                <p>
+                    Voir les articles de mon blog de stage
+                </p>
+            </div>
             <div id="blogModal" class="project-modal">
                 <span class="close" onclick="closeModal()">&times;</span>
                 <h2>Blog PublishPoint</h2>
@@ -569,6 +851,13 @@
                 <div class="tk">
                     <img src="img/tk.png" alt="maquette">
                 </div>
+            </div>
+            <div id="flappyModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Flappy Bird</h2>
+                <p>
+                    - Capture video de Unity (à mettre plus tard)
+                </p>
             </div>
             <div id="mazeModal" class="project-modal">
                 <span class="close" onclick="closeModal()">&times;</span>
@@ -629,6 +918,13 @@
                     <p>ligne d'arrivée:</p>
                     <img src="img/flag.png" alt="flag">
                 </div>
+            </div>
+            <div id="runnerModal" class="project-modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Infinite Runner</h2>
+                <p>
+                    - Capture video de Unity (à mettre plus tard)
+                </p>
             </div>
             <div id="aiModal" class="project-modal">
                 <span class="close" onclick="closeModal()">&times;</span>
