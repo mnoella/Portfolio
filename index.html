@@ -211,95 +211,328 @@
     
     <div class="mes-projets" id="projects">
         <h2>Mes réalisations</h2>
-        <div class="flex1">
-            <div class="projet">
-                <a href="https://mnoella.github.io/panic-cookie/" target="_blank">
-                    <img src="img/choc-de-saveur.jpg" alt="site jeu de plateau">
-                    <h3>Panic Cookie</h3>
+        <div class="projects-grid">
+            <!-- Projets en ligne avec lien externe -->
+            <div class="project-card">
+                <a href="https://mnoella.github.io/panic-cookie/" target="_blank" class="project-link">
+                    <div class="project-image">
+                        <img src="img/choc-de-saveur.jpg" alt="Panic Cookie">
+                        <div class="project-overlay">
+                            <span class="view-project">Voir le projet →</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Panic Cookie</h3>
+                        <p class="project-description">Jeu de plateau interactif</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
                 </a>
             </div>
-            <div class="projet">
-                <a href="https://mnoella.github.io/bookshop/" target="_blank">
-                    <img src="img/bookshop.jpg" alt="BookShop - Projet Ergonomie CSS">
-                    <h3>BookShop</h3>
+
+            <div class="project-card">
+                <a href="https://mnoella.github.io/bookshop/" target="_blank" class="project-link">
+                    <div class="project-image">
+                        <img src="img/bookshop.jpg" alt="BookShop">
+                        <div class="project-overlay">
+                            <span class="view-project">Voir le projet →</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>BookShop</h3>
+                        <p class="project-description">Projet Ergonomie & CSS</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
                 </a>
             </div>
-            <div class="projet">
-                <a href=" https://mnoella.github.io/my-dev-journey/" target="_blank">
-                    <img src="img/blog-stage.png" alt="Blog de validation de stage">
-                    <h3>Blog de validation de stage</h3>
+
+            <div class="project-card">
+                <a href="https://mnoella.github.io/my-dev-journey/" target="_blank" class="project-link">
+                    <div class="project-image">
+                        <img src="img/blog-stage.png" alt="Blog de validation de stage">
+                        <div class="project-overlay">
+                            <span class="view-project">Voir le projet →</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blog de validation de stage</h3>
+                        <p class="project-description">Documentation de parcours professionnel</p>
+                        <div class="project-tags">
+                            <span class="tag">Blog</span>
+                            <span class="tag">Documentation</span>
+                        </div>
+                    </div>
                 </a>
             </div>
-            <div class="projet" onclick="openModal('svelma')">
-                <img src="img/svelma.png" alt="Svelma">
-                <h3>Svelma</h3>
+
+            <!-- Projets avec modal -->
+            <div class="project-card" onclick="openModal('svelma')">
+                <div class="project-image">
+                    <img src="img/svelma.png" alt="Svelma">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Svelma</h3>
+                    <p class="project-description">Application SvelteKit</p>
+                    <div class="project-tags">
+                        <span class="tag">SvelteKit</span>
+                        <span class="tag">TypeScript</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('fmg')">
-                <img src="img/findmygem.png" alt="Find My Gem">
-                <h3>Find My Gem</h3>
+
+            <div class="project-card" onclick="openModal('fmg')">
+                <div class="project-image">
+                    <img src="img/findmygem.png" alt="Find My Gem">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Find My Gem</h3>
+                    <p class="project-description">Application de découverte</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">API</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('aquatrack')">
-                <img src="img/aquatrack.jpg" alt="AquaTrack">
-                <h3>AquaTrack</h3>
+
+            <div class="project-card" onclick="openModal('aquatrack')">
+                <div class="project-image">
+                    <img src="img/aquatrack.jpg" alt="AquaTrack">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>AquaTrack</h3>
+                    <p class="project-description">Suivi de consommation d'eau</p>
+                    <div class="project-tags">
+                        <span class="tag">Mobile</span>
+                        <span class="tag">React Native</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('travel')">
-                <img src="img/travel-app.jpeg" alt="TravelDiscover App">
-                <h3>TravelDiscover</h3>
+
+            <div class="project-card" onclick="openModal('travel')">
+                <div class="project-image">
+                    <img src="img/travel-app.jpeg" alt="TravelDiscover">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>TravelDiscover</h3>
+                    <p class="project-description">Application de voyage</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Maps API</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('forum')">
-                <img src="img/forum-anonyme.png" alt="Forum Anonyme">
-                <h3>Forum Anonyme</h3>
+
+            <div class="project-card" onclick="openModal('forum')">
+                <div class="project-image">
+                    <img src="img/forum-anonyme.png" alt="Forum Anonyme">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Forum Anonyme</h3>
+                    <p class="project-description">Plateforme de discussion</p>
+                    <div class="project-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('calculator')">
-                <img src="img/calculator.png" alt="Calculator App">
-                <h3>Calculator</h3>
+
+            <div class="project-card" onclick="openModal('calculator')">
+                <div class="project-image">
+                    <img src="img/calculator.png" alt="Calculator">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Calculator</h3>
+                    <p class="project-description">Calculatrice moderne</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('hcc')">
-                <img src="img/hcc.jpg" alt="Handball - API REST">
-                <h3>Handball <i><small>API REST</small></i></h3>
+
+            <div class="project-card" onclick="openModal('hcc')">
+                <div class="project-image">
+                    <img src="img/hcc.jpg" alt="Handball API">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Handball API REST</h3>
+                    <p class="project-description">API de gestion de handball</p>
+                    <div class="project-tags">
+                        <span class="tag">NestJS</span>
+                        <span class="tag">TypeORM</span>
+                        <span class="tag">API REST</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('eatzee')">
-                <img src="img/eatzee.jpeg" alt="Eatzee">
-                <h3>Eatzee <i><small>Alternance</small></i></h3>
+
+            <div class="project-card" onclick="openModal('eatzee')">
+                <div class="project-image">
+                    <img src="img/eatzee.jpeg" alt="Eatzee">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Eatzee</h3>
+                    <p class="project-description">Projet en alternance</p>
+                    <div class="project-tags">
+                        <span class="tag tag-alternance">Alternance</span>
+                        <span class="tag">React</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('eatzee')">
-                <img src="img/teny-zaraina.png" alt="Teny Zaraina - Alternance">
-                <h3>Teny Zaraina <i><small>Alternance</small></i></h3>
+
+            <div class="project-card" onclick="openModal('tenyzaraina')">
+                <div class="project-image">
+                    <img src="img/teny-zaraina.png" alt="Teny Zaraina">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Teny Zaraina</h3>
+                    <p class="project-description">Projet en alternance</p>
+                    <div class="project-tags">
+                        <span class="tag tag-alternance">Alternance</span>
+                        <span class="tag">Next.js</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('blog')">
-                <img src="img/blog.PNG" alt="blog php">
-                <h3>Blog PHP</h3>
+
+            <div class="project-card" onclick="openModal('blog')">
+                <div class="project-image">
+                    <img src="img/blog.PNG" alt="Blog PHP">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Blog PublishPoint</h3>
+                    <p class="project-description">Plateforme de blogging</p>
+                    <div class="project-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('gpt')">
-                <img src="img/ai.jpg" alt="projet python">
-                <h3>Projet GPT Tkinter</h3>
+
+            <div class="project-card" onclick="openModal('gpt')">
+                <div class="project-image">
+                    <img src="img/ai.jpg" alt="GPT Tkinter">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Projet GPT Tkinter</h3>
+                    <p class="project-description">Interface IA avec Tkinter</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Tkinter</span>
+                        <span class="tag">IA</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('flappy')">
-                <img src="img/flappy.png" alt="Flappy Bird">
-                <h3>Flappy Bird</h3>
+
+            <div class="project-card" onclick="openModal('flappy')">
+                <div class="project-image">
+                    <img src="img/flappy.png" alt="Flappy Bird">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Flappy Bird</h3>
+                    <p class="project-description">Clone du jeu classique</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Game Dev</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('maze')">
-                <img src="img/maze.jpg" alt="projet csharp">
-                <h3>Maze Game C#</h3>
+
+            <div class="project-card" onclick="openModal('maze')">
+                <div class="project-image">
+                    <img src="img/maze.jpg" alt="Maze Game">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Maze Game</h3>
+                    <p class="project-description">Jeu de labyrinthe</p>
+                    <div class="project-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">MonoGame</span>
+                    </div>
+                </div>
             </div>
-            <div class="projet" onclick="openModal('runner')">
-                <img src="img/infinite-runner.jpeg" alt="Infinite Runner">
-                <h3>Infinite Runner</h3>
+
+            <div class="project-card" onclick="openModal('runner')">
+                <div class="project-image">
+                    <img src="img/infinite-runner.jpeg" alt="Infinite Runner">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Infinite Runner</h3>
+                    <p class="project-description">Jeu endless runner</p>
+                    <div class="project-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">Game Dev</span>
+                    </div>
+                </div>
             </div>
-            <!--
-            <div class="projet">
-                <img src="img/projet_js.jpg" alt="projet JS">
-                <h3>Projet1 JS</h3>
-                <h5>À  VENIR ...</h5>
-            </div>
-            -->
-            <div class="projet" onclick="openModal('ai')">
-                <img src="img/react.jpg" alt="projet Django - React">
-                <h3>AI-StoryCraft Django React</h3>
+
+            <div class="project-card" onclick="openModal('ai')">
+                <div class="project-image">
+                    <img src="img/react.jpg" alt="AI-StoryCraft">
+                    <div class="project-overlay">
+                        <span class="view-project">En savoir plus →</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>AI-StoryCraft</h3>
+                    <p class="project-description">Génération d'histoires par IA</p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">React</span>
+                        <span class="tag">GPT-2</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Modals restent inchangés -->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <div id="blogModal" class="project-modal">
@@ -396,22 +629,15 @@
                     <p>ligne d'arrivée:</p>
                     <img src="img/flag.png" alt="flag">
                 </div>
-                <!--
-                <div class="gitcode">
-                    <a href="https://github.com/mnoella" class="github" target="_blank">
-                        <img src="img/github.png" alt="github">
-                        <span class="label">Github</span>
-                    </a>
-                </div> -->
             </div>
             <div id="aiModal" class="project-modal">
                 <span class="close" onclick="closeModal()">&times;</span>
                 <h2>AI-StoryCraft Django - React</h2>
                 <p>
-                    StoryCraft esf une plateforme de narration interactive en streaming, utilisant 
+                    StoryCraft est une plateforme de narration interactive en streaming, utilisant 
                     l'intelligence artificielle pour personnaliser l'expérience de lecture et créer des histoires dynamiques 
                     adaptées aux préférences des utilisateurs. 
-                    StoryCraft est un projet de groupe de 3 personnes. Mon rôle etait la gestion du frontend, à partir de 
+                    StoryCraft est un projet de groupe de 3 personnes. Mon rôle était la gestion du frontend, à partir de 
                     l'intégration IA qui a été fait par l'un des membres du groupe, et la gestion de la base de donnée entre 
                     le backend et le frontend. <br><br>
                     Technologie utilisées:
@@ -436,7 +662,7 @@
                     <img src="img/ai-login.png" alt="connexion" class="img3">
                 </div><br>
 
-                <h4>Generation d’histoire Backend Django</h4>
+                <h4>Generation d'histoire Backend Django</h4>
                 <p>
                     Notre générateur d'histoires interactif permet aux utilisateurs de personnaliser divers aspects de leur histoire, 
                     tels que les personnages, les paramètres et les éléments de l'intrigue, en fonction de leurs préférences."
