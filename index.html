@@ -13,6 +13,11 @@
     <header>
         <nav>
             <!--<a href="#"><img src="img/noella.png" alt="logo" class="logo"></a>-->
+            <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul>
                 <li><a href="#home">ACCUEIL</a></li>
                 <li><a href="#about">À PROPOS</a></li>
@@ -21,6 +26,23 @@
                 <li><a href="#contacts">CONTACTS</a></li>
                 <li><a href="https://mnoella.github.io/my-dev-journey/" target="_blank">BLOG</a></li>
             </ul>
+            <div class="nav-overlay" id="navOverlay"></div>
+            <div class="nav-menu" id="navMenu">
+                <button class="nav-close" id="navClose" aria-label="Fermer le menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <ul>
+                    <li><a href="#home">ACCUEIL</a></li>
+                    <li><a href="#about">À PROPOS</a></li>
+                    <li><a href="#skills">COMPETENCES</a></li>
+                    <li><a href="#projects">PROJETS</a></li>
+                    <li><a href="#contacts">CONTACTS</a></li>
+                    <li><a href="https://mnoella.github.io/my-dev-journey/" target="_blank">BLOG</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     
@@ -29,7 +51,7 @@
         <p>
             <strong>Bienvenue!</strong> Je suis <strong>Noëlla MAILHOL</strong>, je suis passionnée du développpement d'application web <br>
             et mobile. Suite à l'obtention de mon titre <strong>Concepteur Développeur d'Application (CDA)</strong> <br>
-            j'ai décidé de poursuivre en MBA Développement FullStack à MyDigitalSchool de Lille cette année. <br>
+            j'ai décidé de poursuivre en MBA Développement Full Stack à MyDigitalSchool de Lille cette année. <br>
             Mon parcours académique et mes expériences en entreprise ont été une occasion d'acquérir les <br>
             compétences nécessaires pour mener à bien un projet quelconque. <br><br>
 
@@ -46,7 +68,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         let typed = new Typed('.auto-typing', {
-            strings: ['FullStack'],
+            strings: ['Full Stack'],
             typeSpeed: 100,
             backSpeed: 100,
             loop: true,
